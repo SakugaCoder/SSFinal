@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Menu super animado</title>
+<script src="jquery-3.1.0.min.js"></script>
+<style>
+	.contenedor{
+		position:absolute;
+		margin:30px;
+		width:100px;
+		height:100px;
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		cursor:pointer;
+	}
+
+	.menu{
+		transition:1s;
+		height:5%;
+		background-color:black;
+	}
+
+	.menu:after,.menu:before,.menu{
+		position:absolute;
+		width:100%;
+		transition:1s;
+		content:'';
+		background-color:black;
+		border-radius:5px;
+	}
+
+	.menu:before{
+		height:100%;
+		top:-50px;
+	}
+
+	.menu:after{
+		height:100%;
+		top:50px;
+	}
+
+	.cruz{
+		transform:rotateZ(45deg);
+	}
+
+	.cruz:before{
+		transform:rotateZ(90deg);
+		top:0;
+	}
+
+	.cruz:after{
+		transform:rotateZ(90deg);
+		top:0;
+	}
+</style>
+</head>
+<body>
+	<div class="contenedor" id="cont">
+		<div class="menu" id="men">
+		</div>
+	</div>
+	<script>
+		var contenedor = document.getElementById("cont");
+		var menu = document.getElementById("men");
+		var c = 0;
+
+		contenedor.addEventListener("click",function(){
+			c++;
+			if(c < 2){
+				menu.classList.add("cruz");
+			}
+			else{
+				menu.classList.remove("cruz");
+				c=0;
+			}
+		});
+	</script>
+</body>
+</html>

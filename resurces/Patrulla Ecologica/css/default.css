@@ -1,0 +1,210 @@
+*{margin:0px; padding:0px;}
+body{background:;}
+a{text-decoration:none;}
+ul{list-style:none;}
+header{width:100%;}
+p{text-align:justify;}
+#servicios img{display:block;width:60px;height:60px;margin:auto;}
+
+#slides{
+	width:100%;
+}
+
+#slides img{
+	width:100%;
+}
+
+.slidesjs-pagination{
+	background-color:#000;
+	overflow:hidden;
+}
+
+.slidesjs-pagination li{
+	float:right;
+}
+
+.slidesjs-pagination li a{
+	display:block;
+	padding:10px 15px;
+	color:#fff;
+	transition:all ease 0.5s;
+}
+
+.slidesjs-pagination li a:hover{
+	text-decoration:none;
+	background-color:#fff;
+	color:#000;
+}
+
+#slides .active{
+	background-color:#fff;
+	text-decoration:none;
+	color:#000;
+}
+.slidesjs-pagination li a:active{
+	background-color:#fff;
+	color:#000;
+	text-decoration:none;
+}
+	
+.slidesjs-navigation{
+	background-color:black;
+	color:#fff;
+	float:left;
+	display:inline-block;
+	padding:13px 20px;
+	transition:all ease 0.3s;
+}
+
+.slidesjs-navigation:hover{
+	text-decoration:none;
+}
+
+.botonSuscribe{
+	position:absolute;
+	top:200px;
+	width:100%;
+	display:flex;
+
+}
+
+.botonSuscribe button{
+	display:block;
+	margin:auto;
+	width:180px;
+	height:80px;
+	font-size:30px;
+	padding:5px 15px;
+	background-color:rgba(0,0,0,0);
+	border:2px solid #2e7d32;
+	color:#FFF;
+	z-index:12;
+	border-radius:10px;
+	transition:all ease 0.5s;
+}
+
+.botonSuscribe button:hover{
+	background-color:#2e7d32;
+}
+
+nav{
+	position:fixed;
+	top:0;
+	display:block;
+	z-index:13;
+	background-color:#43a047;
+	width:100%;
+	display:flex;
+	box-shadow:1px 1px 0px;
+}
+
+nav ul{
+	margin: auto;
+	display:flex;
+	align-items:center;
+}
+
+nav ul li a{
+	display:block;
+	padding:5px 15px;
+	color:#fff;
+	transition:all ease 0.3s;
+	border:solid 2px rgba(0,0,0,0);
+	border-radius:5px;
+}
+
+nav ul li a:hover{
+	background-color:#00c853;
+	color:#fff;
+	text-decoration:none;
+	border:solid 2px #fff;	
+}
+
+.show{
+	padding:200px 0px;
+	width:100%;
+}
+
+section h2, section h3, section p{color:#fff;}
+section h2{
+	font-size:40px;
+	text-align:center;
+}
+
+section h3{
+	font-size:25px;
+	text-align:center;
+}
+ hr{
+	display:block;	
+	margin:auto;
+	width:100px;
+	border:solid 3px #00bfa5;
+	border-radius:10px;
+	margin-bottom:10px;
+}
+section p{
+	font-size:16px;
+}
+
+#acerca, #servicios, #unete, #contacto{
+	background-size:cover;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+#acerca{background-image:url(../img/Background/IMG01.jpg);}
+#servicios{background-image:url(../img/Background/IMG02.jpg);}
+#unete{background-image:url(../img/Background/IMG03.jpg);}
+#contacto{background-image:url(../img/Background/IMG04.jpg);}
+
+#unete button{
+	display:block;
+	width:180px;
+	height:80px;
+	padding:10px 20px;
+	margin:auto;
+	border-radius:10px;
+	border:2px solid #69f0ae;
+	background-color:rgba(0,0,0,.0);
+	color:#fff;
+	font-size:30px;
+	transition:all ease 0.5s;
+}
+
+#unete button:hover{
+	background-color:#69f0ae;
+	border:2px solid #fff;
+}
+
+
+#contacto img{display:block;margin:auto;margin-top:60px;}
+#contacto h2, #contacto h3{text-align:center;}
+
+footer{background-color:#33691e;padding:30px 0px;}
+footer .contain{
+	background-color:#1b5e20;
+	padding:30px 0px;
+	border:solid 1px #164c1a;}
+footer .contain p{text-align:center;margin-top:20px;color:#fff;}
+
+@media screen and (max-width:800px){
+	.botonSuscribe{display:none;visibility:hidden;}
+	.botonSuscribe button{display:none;visibility:hidden;}
+	nav{background-color:#000;}
+}
+
+.mediaContacto{
+	border:solid 2px #69f0ae;
+ 	background-color:rgba(15,240,174,.4);
+ 	padding:15px;
+ 	margin-top:30px;
+ 	border-radius:10px;
+}
+
+.mediaContacto h3 b{color:#000;}
+.mediaContacto h4 b{color:#122A4A;}
+.mediaContacto small  p{color:#EAF0F1;}
+.mediaContacto > p {color:#fff;}
+#contacto{padding-bottom:60px;}
