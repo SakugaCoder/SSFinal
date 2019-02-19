@@ -1,0 +1,15 @@
+.thumbnail{
+	transition:all ease 0.4s;
+}
+
+.thumbnail:hover .caption p{
+	color:#fff;
+}
+
+.thumbnail:hover .caption h3{
+	color:#CFDDE0;
+}
+
+.thumbnail:hover{
+	background-color:#34505B;
+}

@@ -1,0 +1,26 @@
+.btnUp{
+	position:fixed;
+	background-color:#2CA9CE;
+	right:20px;
+	bottom:20px;
+	padding:10px;
+	border-radius:10px;
+	padding:10px;
+	transition:all ease 0.2s;
+	display:none;
+}
+
+.btnUp:hover{
+	background-color:#238DB0;
+	cursor:pointer;
+}
+.btnUp span{
+	font-size:30px;
+	line-height:30px;
+	height:30px;
+	width:30px;
+	display:block;
+	margin:auto;
+	color:#fff;
+}
+

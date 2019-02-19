@@ -1,0 +1,9 @@
+body{
+	background-image:url(../img/SSImages/IMG02.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+}
+
+.row p{text-align:justify;}
